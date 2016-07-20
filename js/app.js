@@ -87,7 +87,7 @@ function playHadouken() {
 }
 
 function playHulkHadouken() {
-    $('#hulk-hadouken-sound')[0].volume = 0.5;
+    $('#hulk-hadouken-sound')[0].volume = 1;
     $('#hulk-hadouken-sound')[0].load();
     $('#hulk-hadouken-sound')[0].play();
 }
