@@ -81,17 +81,23 @@ $('body').on('keydown', function(e) {
     });
 
 function playHadouken() {
-    $('#hadouken-sound')[0].volume = 0.5;
+    $('#hadouken-sound')[0].volume = 1;
     $('#hadouken-sound')[0].load();
     $('#hadouken-sound')[0].play();
 }
 
 function playHulkHadouken() {
     $('#hulk-hadouken-sound')[0].volume = 0.5;
-     $('#hulk-hadouken-sound')[0].setrate = -1;
     $('#hulk-hadouken-sound')[0].load();
     $('#hulk-hadouken-sound')[0].play();
 }
+
+function setVolume() {
+    $("#ryu-music").prop('volume', 0.5);
+}
+
+
+
 
 
 
